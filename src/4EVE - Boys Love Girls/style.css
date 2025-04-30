@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+    color: #888888;
+    width: 100%;
+}
+
+body {
+    background-color: #191970;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 75%;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container header {
+    background-color: #DDDDDD;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px 24px 0 0;
+    box-shadow: 0 0 24px #18181844;
+}
+
+.container header h1 {
+    width: 90%;
+    text-align: center;
+    color: #181818;
+    font-size: 48px;
+    font-weight: 500;
+    border-bottom: 1px solid #18181888;
+}
+
+.container header h3 {
+    width: 90%;
+    text-align: center;
+    margin: 12px 0 12px;
+    background-color: #181818;
+}
+
+h3 span {
+    font-weight: 400;
+}
+
+.container main {
+    background-color: #181818;
+    border-radius: 0 0 24px 24px;
+    width: 100%;
+    padding: 24px 48px;
+    box-shadow: 0 0 24px #18181844;
+}
+
+p,
+p span {
+    font-weight: 300;
+}
+
+.mind {
+    color: #e6194b;
+}
+
+.jorin {
+    color: #3cb44b;
+}
+
+.taaom {
+    color: #ffe119;
+}
+
+.hanna {
+    color: #4363d8;
+}
+
+.fai {
+    color: #f58231;
+}
+
+.punch {
+    color: #991eb4;
+}
+
+.aheye {
+    color: #42d4f4;
+}
