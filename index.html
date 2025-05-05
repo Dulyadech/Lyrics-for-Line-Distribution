@@ -5,20 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/index.css">
     <title>First Page</title>
 </head>
 
 <body>
-    <header>
-        <h1>Lyrics</h1>
-        <h3>for Line Distribution</h3>
-    </header>
-    <div class="link-container">
-        <a href="./src/4EVE - Boys Love Girls/index.html">4EVE - Boys Love Girls</a>
-        <a href="./src/ATLAS - เป๊ะ/tempo.html">ATLAS - <span class="thai">เป๊ะ</span></a>
-        <a href="./src/DICE - BANG!/index.html">DICE - BANG!</a>
-    </div>
+    <nav>
+        <a href=""><img src="./src/assets/Logo/LYRIX-Logo.svg" alt="Logo"></a>
+        <a href="">Lyrics</a>
+        <a href="">Group</a>
+        <a href="">Members</a>
+        <a href="">About</a>
+        <div class="search">
+            <input type="text" id="search" placeholder="Search...">
+            <label for="search" id="iconSearch">
+                <img src="./src/assets/Icon/bx-search.svg" alt="Search">
+            </label>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <h1>Lyrics</h1>
+            <h3>for Line Distribution</h3>
+        </header>
+        <div class="card-container">
+            <a href="./src/4EVE - Boys Love Girls/index.html" class="card">
+                <img src="./src/assets/Pictures/Boys-Love-Girls.jpg" alt="Boys-Love-Girls">
+                <h1>4EVE - Boys Love Girls</h1>
+            </a>
+            <a href="./src/ATLAS - เป๊ะ/tempo.html" class="card">
+                <img src="./src/assets/Pictures/เป๊ะ.jpg" alt="เป๊ะ">
+                <h1>ATLAS - <span class="thai">เป๊ะ</span></h1>
+            </a>
+            <a href="./src/BUS - LIAR/index.html" class="card">
+                <img src="./src/assets/Pictures/Spotify Cover BUS - LIAR.jpg" alt="LIAR">
+                <h1>BUS - LIAR</h1>
+            </a>
+            <a href="./src/DICE - BANG!/index.html" class="card">
+                <img src="./src/assets/Pictures/BANG!.jpg" alt="BANG!">
+                <h1>DICE - BANG!</h1>
+            </a>
+
+        </div>
+    </main>
 
     <script src="./src/scripts/index.js"></script>
 

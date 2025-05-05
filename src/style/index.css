@@ -1,0 +1,182 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #fffcfc;
+  min-height: 100vh;
+}
+
+img {
+  width: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.thai {
+  font-family: "Mitr", sans-serif;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 16rem;
+  width: 100%;
+  background-color: #fff8f8;
+  box-shadow: 0 4px 24px #44444444;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+nav a img {
+  height: 50px;
+}
+
+nav a {
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  padding: 0 0.5rem;
+}
+
+nav a:first-child {
+  display: flex;
+  align-items: center;
+}
+
+nav a:not(:first-child)::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  scale: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:not(:first-child):hover::after {
+  scale: 1;
+}
+
+nav .search {
+  position: relative;
+  width: 12rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .search label {
+  width: 2rem;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 100%;
+  translate: 50%;
+  transition: all 0.4s ease;
+}
+
+nav .search label img {
+  width: 2rem;
+}
+
+nav .search input {
+  width: 0;
+  padding: 4px 16px;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  transition: all 0.4s ease;
+}
+
+nav .search input:focus + label {
+  right: 0;
+  translate: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+main header {
+  width: 90%;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  background-color: transparent;
+  box-shadow: 0 0 2rem #44444422;
+}
+
+main header h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+main header h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+main .card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+main .card-container .card {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 2rem #44444488;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+main .card-container .card:hover {
+  box-shadow: 0 0.5rem 2rem #44444488;
+  translate: 0 -0.5rem;
+}
+
+main .card-container .card img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+main .card-container .card h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
