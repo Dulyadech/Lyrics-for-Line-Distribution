@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #fffcfc;
+  background-color: #191970;
   min-height: 100vh;
 }
 
@@ -22,7 +22,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #1f1f1f;
+  color: #f1f1f1;
 }
 
 .thai {
@@ -36,7 +36,7 @@ nav {
   align-items: center;
   padding: 0.5rem 16rem;
   width: 100%;
-  background-color: #fff8f8;
+  background-color: #393990;
   box-shadow: 0 4px 24px #44444444;
   position: sticky;
   top: 0;
@@ -64,11 +64,11 @@ nav a:not(:first-child)::after {
   content: "";
   width: 100%;
   height: 0.5px;
-  background-color: black;
+  background-color: #f1f1f1;
   bottom: 0;
   left: 0;
   scale: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.25s ease;
 }
 
 nav a:not(:first-child):hover::after {
@@ -96,8 +96,9 @@ nav .search label {
   transition: all 0.4s ease;
 }
 
-nav .search label img {
-  width: 2rem;
+nav .search label i {
+  scale: 2;
+  color: #f1f1f1;
 }
 
 nav .search input {
@@ -111,6 +112,12 @@ nav .search input {
   opacity: 0;
   left: 0;
   transition: all 0.4s ease;
+  color: #f1f1f1;
+}
+
+nav .search input::selection {
+  background-color: #d1d1d1;
+  color: #1d1d1d;
 }
 
 nav .search input:focus + label {
@@ -131,7 +138,12 @@ main header {
   width: 90%;
   padding: 1rem 0;
   border-radius: 1rem;
-  background-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    #dddddd,
+    transparent
+  );
   box-shadow: 0 0 2rem #44444422;
 }
 
@@ -147,7 +159,7 @@ main header h3 {
 
 main .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   gap: 1rem;
@@ -156,14 +168,13 @@ main .card-container {
 
 main .card-container .card {
   flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
   box-shadow: 0 0 2rem #44444488;
   width: 100%;
   overflow: hidden;
   border-radius: 1rem;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  aspect-ratio: 1/1;
 }
 
 main .card-container .card:hover {
@@ -173,10 +184,18 @@ main .card-container .card:hover {
 
 main .card-container .card img {
   width: 100%;
-  margin-bottom: 2rem;
 }
 
 main .card-container .card h1 {
+  z-index: 1;
+  color: #fff;
   text-align: center;
-  margin-bottom: 1rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-shadow: 0 0 1.5rem #00000088;
+  backdrop-filter: blur(2rem);
+  font-size: 1.5rem;
 }
