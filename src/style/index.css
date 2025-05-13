@@ -120,6 +120,10 @@ nav .search input::selection {
   color: #1d1d1d;
 }
 
+nav .search input::placeholder {
+  color: #f1f1f1;
+}
+
 nav .search input:focus + label {
   right: 0;
   translate: 100%;
