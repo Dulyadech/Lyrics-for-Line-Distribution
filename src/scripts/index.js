@@ -9,4 +9,5 @@ iconSearch.addEventListener("click", () => {
 inputSearch.addEventListener("blur", () => {
   inputSearch.style.opacity = "0";
   inputSearch.style.width = "0";
+  inputSearch.value = "";
 });
